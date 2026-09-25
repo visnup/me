@@ -1,0 +1,101 @@
+@import '@fontsource-variable/newsreader';
+@import '@fontsource-variable/newsreader/wght-italic.css';
+
+:root {
+  color-scheme: light dark;
+  --paper: #f5f1ea;
+  --ink: #1f1c18;
+  --muted: #7a7268;
+  --rule: #ddd6ca;
+  --accent: #c8452c;
+  --serif: 'Newsreader Variable', Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151412;
+    --ink: #ece6dc;
+    --muted: #8f877b;
+    --rule: #2e2b27;
+    --accent: #ec7a5c;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1rem/1.5 system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 14vh, 9rem) 16px 4rem;
+}
+
+h1 {
+  margin: 0;
+  font: 400 clamp(2.25rem, 9vw, 3.5rem) / 1.05 var(--serif);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 4rem 0 0.75rem;
+  font: italic 400 1.25rem var(--serif);
+  color: var(--muted);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--rule);
+}
+
+li {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+li a {
+  font: 1.5rem/1.2 var(--serif);
+  text-decoration: none;
+}
+
+li a::after {
+  content: ' →';
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+li a:hover::after,
+li a:focus-visible::after {
+  opacity: 1;
+}
+
+li p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+footer a {
+  text-underline-offset: 0.25em;
+}

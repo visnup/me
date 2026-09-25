@@ -12,7 +12,7 @@ pnpm preview   serve dist/
   `build.rolldownOptions.input` in a `vite.config.js`. Vite only builds `index.html` by default.
 - `public/` is copied as-is (favicon and anything else that shouldn't be hashed).
 - No framework, no TypeScript. Add JS as a `<script type="module">` when a page needs it.
-- Vercel detects Vite on its own, so there's no `vercel.json`. Pushing `master` deploys.
+- Vercel detects Vite on its own, so there's no `vercel.json`. Pushing `main` deploys.
 
 ## What it's for
 

@@ -16,8 +16,8 @@ pnpm preview   serve dist/
   `points.svg` and Monopoly Deal's `cards.svg` cropped to their top ten rows by their `height`
   and `viewBox`).
   Poker dance's video is hotlinked from poker.dance. Observable's are its five latest notebooks'
-  thumbnails (`static.observableusercontent.com/thumbnail/<hash>.jpg`), each linking to its
-  notebook.
+  thumbnails (`static.observableusercontent.com/thumbnail/<hash>.jpg`). Each image links to
+  where it was taken: the notebook, the page, or the repo a chart comes from.
 - No framework, no TypeScript. Add JS as a `<script type="module">` when a page needs it.
 - Vercel detects Vite on its own, so there's no `vercel.json`. Pushing `main` deploys.
 

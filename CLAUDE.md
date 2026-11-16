@@ -18,6 +18,6 @@ pnpm preview   serve dist/
 
 A name, then two lists: "For fun" (side projects) and "For work" (Observable), then GitHub.
 Each links its live site, or its public GitHub repo when there isn't one (Rummikub). The board
-game simulators share one entry, "Board games", whose links go to their repos, since the README
+game simulators share one entry, "Simulating board games", whose links go to their repos, since the README
 is the point. Private repos stay off it, and so does chat-rpg: every session calls the
 Anthropic API on Visnu's bill.

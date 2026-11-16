@@ -10,7 +10,14 @@ pnpm preview   serve dist/
 
 - `index.html` is the page. Add more pages as more `.html` files at the root and list them in
   `build.rolldownOptions.input` in a `vite.config.js`. Vite only builds `index.html` by default.
-- `public/` is copied as-is (favicon and anything else that shouldn't be hashed).
+- `public/` is copied as-is (favicon and anything else that shouldn't be hashed). `public/shots/`
+  holds each entry's strip of images: screenshots and og images as 640px-wide WebP
+  (`cwebp -q 80 -resize 640 0`), and the simulators' charts copied from their repos' `charts/` (Magical Athlete's
+  `points.svg` and Monopoly Deal's `cards.svg` cropped to their top ten rows by their `height`
+  and `viewBox`).
+  Poker dance's video is hotlinked from poker.dance. Observable's are its five latest notebooks'
+  thumbnails (`static.observableusercontent.com/thumbnail/<hash>.jpg`), each linking to its
+  notebook.
 - No framework, no TypeScript. Add JS as a `<script type="module">` when a page needs it.
 - Vercel detects Vite on its own, so there's no `vercel.json`. Pushing `main` deploys.
 

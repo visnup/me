@@ -56,20 +56,21 @@ li {
   border-bottom: 1px solid var(--rule);
 }
 
-li a {
+li > a,
+li > span {
   font: 1.5rem/1.2 var(--serif);
   text-decoration: none;
 }
 
-li a::after {
+li > a::after {
   content: ' →';
   color: var(--accent);
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-li a:hover::after,
-li a:focus-visible::after {
+li > a:hover::after,
+li > a:focus-visible::after {
   opacity: 1;
 }
 

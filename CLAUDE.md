@@ -16,6 +16,8 @@ pnpm preview   serve dist/
 
 ## What it's for
 
-A name, then two lists: "For fun" (side projects with live sites) and "For work" (Observable),
-then GitHub. When a side project gets a public URL, add it under "For fun" in `index.html`. Private repos without a live site stay off it, and so
-does chat-rpg: every session calls the Anthropic API on Visnu's bill.
+A name, then two lists: "For fun" (side projects) and "For work" (Observable), then GitHub.
+Each links its live site, or its public GitHub repo when there isn't one (Rummikub). The board
+game simulators share one entry, "Board games", whose links go to their repos, since the README
+is the point. Private repos stay off it, and so does chat-rpg: every session calls the
+Anthropic API on Visnu's bill.

@@ -18,6 +18,9 @@ pnpm preview   serve dist/
   Poker dance's video is hotlinked from poker.dance. Observable's are its five latest notebooks'
   thumbnails (`static.observableusercontent.com/thumbnail/<hash>.jpg`). Each image links to
   where it was taken: the notebook, the page, or the repo a chart comes from.
+- `public/icons/` is each entry's favicon, copied from its repo, beside its title. Rummikub's is
+  the 120px `Icon60x60@2x.png` from a built `Rummikub.app`, since Xcode's `ictool` doesn't take
+  the arguments it used to.
 - No framework, no TypeScript. Add JS as a `<script type="module">` when a page needs it.
 - Vercel detects Vite on its own, so there's no `vercel.json`. Pushing `main` deploys.
 

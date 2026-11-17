@@ -44,25 +44,18 @@ h2 {
   color: var(--muted);
 }
 
-ul {
+h3 {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding: 1.25rem 0 0;
   border-top: 1px solid var(--rule);
+  font: 400 1.5rem/1.2 var(--serif);
 }
 
-li {
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-li > a,
-li > span {
-  font: 1.5rem/1.2 var(--serif);
+h3 a {
   text-decoration: none;
 }
 
-.icon {
+h3 img {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.5rem;
@@ -70,25 +63,30 @@ li > span {
   vertical-align: -0.1em;
 }
 
-li > a::after {
+h3 > a::after {
   content: ' →';
   color: var(--accent);
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-li > a:hover::after,
-li > a:focus-visible::after {
+h3 > a:hover::after,
+h3 > a:focus-visible::after {
   opacity: 1;
 }
 
-li p {
+p:has(+ h2, + p:last-child) {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+p {
   margin: 0.25rem 0 0;
   color: var(--muted);
   font-size: 0.9375rem;
 }
 
-.shots {
+p:has(img, video) {
   display: flex;
   gap: 0.5rem;
   margin: 0.75rem -16px 0;
@@ -97,8 +95,8 @@ li p {
   scrollbar-width: none;
 }
 
-.shots img,
-.shots video {
+p img,
+p video {
   display: block;
   height: 9rem;
   flex: none;
@@ -115,12 +113,11 @@ a:hover {
   color: var(--accent);
 }
 
-footer {
+main > p:last-child {
   margin-top: 3rem;
   font-size: 0.875rem;
-  color: var(--muted);
 }
 
-footer a {
+main > p:last-child a {
   text-underline-offset: 0.25em;
 }

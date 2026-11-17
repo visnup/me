@@ -1,0 +1,23 @@
+{
+  "framework": null,
+  "rewrites": [{ "source": "/", "destination": "/index.md" }],
+  "headers": [
+    {
+      "source": "/",
+      "has": [{ "type": "header", "key": "accept", "value": "^(?:(?!text/markdown).)*text/html.*" }],
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" },
+        { "key": "Link", "value": "</style.css>; rel=preload; as=style" },
+        { "key": "Vary", "value": "Accept" }
+      ]
+    },
+    {
+      "source": "/",
+      "missing": [{ "type": "header", "key": "accept", "value": "^(?:(?!text/markdown).)*text/html.*" }],
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Vary", "value": "Accept" }
+      ]
+    }
+  ]
+}

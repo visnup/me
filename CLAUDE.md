@@ -22,7 +22,8 @@ The personal site at **visnup.com**. One Markdown file, deployed by Vercel with 
   ten rows by their `height` and `viewBox`).
   Poker dance's video is hotlinked from poker.dance. The Typing Dead's title screen is a 10 s
   Playwright `recordVideo` capture, re-encoded with `ffmpeg -vf scale=640:-2 -an -c:v libvpx-vp9
-  -crf 36 -b:v 0`. Observable's are its five latest notebooks'
+  -crf 36 -b:v 0`. Monopoly Deal's table is a Playwright capture of a 4-player game against the
+  local dev server, played by its Hint button with others' plays set to Off. Observable's are its five latest notebooks'
   thumbnails (`static.observableusercontent.com/thumbnail/<hash>.jpg`). Each image links to
   where it was taken: the notebook, the page, or the repo a chart comes from.
 - `public/icons/` is each entry's favicon, copied from its repo, beside its title. Rummikub's is
@@ -35,5 +36,5 @@ The personal site at **visnup.com**. One Markdown file, deployed by Vercel with 
 A name, then two lists: "For fun" (side projects) and "For work" (Observable), then GitHub.
 Each links its live site, or its public GitHub repo when there isn't one (Rummikub). The board
 game simulators share one entry, "Simulating board games", whose links go to their repos, since the README
-is the point. Private repos stay off it, and so does chat-rpg: every session calls the
+is the point. Monopoly Deal also has its own entry for the playable game. Private repos stay off it, and so does chat-rpg: every session calls the
 Anthropic API on Visnu's bill.

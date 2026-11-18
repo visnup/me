@@ -15,6 +15,13 @@ questions. Battleship has a [cheat sheet](https://battleship.visnup.com).
 [![What each Monopoly Deal card is worth](/shots/monopoly-deal-cards.svg)](https://github.com/visnup/monopoly-deal)
 [![Shots to sink a Battleship fleet, by strategy](/shots/battleship-shots.svg)](https://github.com/visnup/battleship)
 
+### [![](/icons/monopoly-deal.svg)Monopoly Deal](https://monopoly.visnup.com)
+
+Monopoly Deal online with friends, and the simulator’s bots in the empty seats.
+
+[![A four-player table at turn 11](/shots/monopoly-deal.webp)](https://monopoly.visnup.com)
+[![Monopoly Deal’s start page](/shots/monopoly-deal-home.webp)](https://monopoly.visnup.com)
+
 ### [![](/icons/rummikub.png)Rummikub](https://github.com/visnup/rummikub)
 
 An AR app to cheat with.

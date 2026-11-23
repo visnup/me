@@ -7,13 +7,13 @@
 ### Simulating board games
 
 [Magical Athlete](https://github.com/visnup/magical-athlete),
-[Monopoly Deal](https://github.com/visnup/monopoly-deal) and
-[Battleship](https://github.com/visnup/battleship), played millions of times to answer strategy
+[Monopoly Deal](https://github.com/visnup/games/blob/main/apps/monopoly-deal/README.md) and
+[Battleship](https://github.com/visnup/games/blob/main/apps/battleship/README.md), played millions of times to answer strategy
 questions. Battleship has a [cheat sheet](https://battleship.visnup.com).
 
 [![Magical Athlete racers’ points by track](/shots/magical-athlete-points.svg)](https://github.com/visnup/magical-athlete)
-[![What each Monopoly Deal card is worth](/shots/monopoly-deal-cards.svg)](https://github.com/visnup/monopoly-deal)
-[![Shots to sink a Battleship fleet, by strategy](/shots/battleship-shots.svg)](https://github.com/visnup/battleship)
+[![What each Monopoly Deal card is worth](/shots/monopoly-deal-cards.svg)](https://github.com/visnup/games/blob/main/apps/monopoly-deal/README.md)
+[![Shots to sink a Battleship fleet, by strategy](/shots/battleship-shots.svg)](https://github.com/visnup/games/blob/main/apps/battleship/README.md)
 
 ### [![](/icons/monopoly-deal.svg)Monopoly Deal](https://monopoly.visnup.com)
 
